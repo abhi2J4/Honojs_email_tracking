@@ -24,7 +24,7 @@ export const sendMail = async(emails:string[],trackingId:string) =>{
     }
     try {
         await transport.sendMail(mailOptions);
-        await sendMail(emails,trackingId)
+        // await sendMail(emails,trackingId)
     } catch (error) {
        console.log(error) ;
        throw new Error ("faild to send email")

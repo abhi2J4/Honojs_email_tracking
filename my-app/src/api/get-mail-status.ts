@@ -4,7 +4,7 @@ import Track from "../model/track.model";
 
 const app = new Hono()
 
-app.get('./get-mail-status/:id',async(c)=>{
+app.get('/get-mail-status/:id',async(c)=>{
     const id = c.req.param("id");
     if(!id) return c.json({error:"tracking id is required"})
         try {

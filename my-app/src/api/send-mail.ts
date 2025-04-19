@@ -12,7 +12,7 @@ app.post("/send-mail",async(c)=>{
     if(!emails || !password) return c.json({error:"Emails and password are required"})
 
          //password validation
-        if(password !== Bun.env.PASSSWORD )return c.json({error:"WRONG PASSWORD"})
+         if(password !== Bun.env.MAIL_PASSWORD)return c.json({error:"WRONG PASSWORD"})
 
             //tracking id ,data store => db
   

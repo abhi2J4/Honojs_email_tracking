@@ -11,7 +11,7 @@ let imageBuffer : Buffer;
     try {
         imageBuffer = await fs.readFile(__dirname  + '/assets/image.png')
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 })();
 
